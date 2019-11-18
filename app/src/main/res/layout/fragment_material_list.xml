@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_quantity_item"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:text="Quantity"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/list_item"
+        android:layout_below="@id/tv_quantity_item"
+        android:layout_margin="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view"
+        android:layout_below="@id/list_item"
+        android:layout_margin="10dp"
+        android:background="#22000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_total"
+        android:layout_below="@id/view"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif"
+        android:textSize="28sp"
+        android:text="TOTAL"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_total_price"
+        android:layout_below="@id/view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="42,23"
+        android:textAllCaps="true"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_subtotal"
+        android:layout_below="@id/tv_total"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:text="Subtotal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_subtotal_price"
+        android:layout_below="@id/txt_total_price"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="42,23"
+        android:textAllCaps="true"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_shipping"
+        android:layout_below="@id/tv_subtotal"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:text="Shipping"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_shipping_price"
+        android:layout_below="@id/tv_subtotal_price"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:text="42,23"
+        android:textAllCaps="true"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_taxes"
+        android:layout_below="@id/tv_shipping"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:text="Tax"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_taxes_price"
+        android:layout_below="@id/tv_shipping_price"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:text="42,23"
+        android:textAllCaps="true"
+        android:textSize="15sp"/>
+
+</RelativeLayout>
